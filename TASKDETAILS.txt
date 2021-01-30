@@ -1,0 +1,62 @@
+Task
+
+Project Name: Kaaylabs
+
+It Having 2 functionalities
+
+1)Register
+2)Fetching By Using Company Name
+
+URLs For functionalitys:
+
+1)Register
+
+url: http:localhost:8978/employee/register
+
+2)Fetching By Using Company Name
+
+url: http:localhost:8978/employee/---
+
+sample input JSON data:
+
+{
+	"name" : "Balaraju"
+	"organization" : "MindTree Ltd",
+	"organizationaddress" : "Pune",
+	"contact" : "8374747459",
+	"address" : "Andhra Pradesh"
+}
+
+
+{
+	"name" : "Abhishek"
+	"organization" : Kaaylabs",
+	"organizationaddress" : "chennai",
+	"contact" : "8978675698",
+	"address" : "Delhi"
+}
+
+
+{
+	"name" : "HariKrishna"
+	"organization" : "MindTree Ltd",
+	"organizationaddress" : "Pune",
+	"contact" : "8374747459",
+	"address" : "Telengana"
+}
+
+sample output JSON data :
+
+http:localhost:8978/employee/search/MindTree Ltd
+
+[{
+	"name" : "Balaraju",
+	"contact" : "8374747459",
+	"address" : "Andhra Pradesh"
+},
+{
+	"name" : "HariKrishna",
+	"contact" : "8374747459",
+	"address" : "Telengana"
+}]
+
